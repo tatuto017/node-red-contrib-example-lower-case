@@ -1,6 +1,6 @@
-import {Node, NodeAPI} from 'node-red';
+import { Node, NodeAPI } from 'node-red';
 
-module.exports = (RED: NodeAPI): void => {
+export default function lowerCaseNode(RED: NodeAPI): void {
   RED.nodes.registerType("lower-case", function (this: Node, config) {
     RED.nodes.createNode(this, config);
 
@@ -10,3 +10,5 @@ module.exports = (RED: NodeAPI): void => {
     });
   });
 };
+
+module.exports = lowerCaseNode;
