@@ -1,0 +1,30 @@
+{
+  "name": "red-contrib-example-lower-case",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lower-case.js",
+  "scripts": {
+    "build": "npm run copy:html && tsc",
+    "copy:html": "cp -a src/*.html dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tatuto017/node-red-contrib-example-lower-case.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tatuto017/node-red-contrib-example-lower-case/issues"
+  },
+  "homepage": "https://github.com/tatuto017/node-red-contrib-example-lower-case#readme",
+  "node-red": {
+    "nodes": {
+      "lower-case": "dist/lower-case.js"
+    }
+  },
+  "devDependencies": {
+    "@types/node-red": "^1.2.1",
+    "typescript": "^4.9.5"
+  }
+}
